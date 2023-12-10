@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="Image1.jpeg"
+  style="width:100%">
+  
+</section>
+
+
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Participate</a>
+  <a href="#">Contact US</a>
+  
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+
+
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <div class="image" style="height:200px;" > src="Image1.jpeg"</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>What is "RISE UP"</h2>
+    
+    <div class="fakeimg" style="height:200px;">Image</div>
+    
+    <p>Rise Up is a new activism group set on changing society for the better. It brings together people from different backgrounds who care about fairness and justice. We are determined to tackle big issues like inequality and unfair systems.We started small, with passionate individuals who believe that working together can make real change. We value everyone's perspectives and believe that diversity makes their solutions stronger.Our methods vary, from talking to communities and teaching about issues to peacefully protesting and pushing for better laws. Everything we do is carefully planned, based on research, and guided by doing what's right.Even when things get tough, Rise Up doesn't give up. We face challenges head-on, staying strong by supporting each other.As we grow, we make a bigger impact by teaming up with others who share their goals. We want to create a fairer world and inspire others to join them in making it happen..</p>
+    <br>
+    <h2>EVENTS</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+  
+    <p> - Equality Walkathon: Rise Up orchestrates an annual Equality Walkathon, a vibrant event designed to raise awareness about social issues related to equality and inclusivity. Participants are encouraged to walk together in a symbolic show of solidarity, wearing colorful attire and carrying banners advocating for equal rights. The walkathon culminates in a community gathering featuring music, art installations, and speeches from activists, aiming to spark conversations and inspire action toward a more equitable society.<br><br>
+
+    - Artivism Week: Rise Up dedicates a week each year to "Artivism," blending art and activism for social change. Throughout the week, they organize street art sessions, where local artists create thought-provoking murals highlighting societal issues. Additionally, workshops are held to teach participants how to use various art forms, such as spoken word, poetry, and theater, as tools for advocacy. The week concludes with an open mic night showcasing performances that address pressing social issues in creative and impactful ways.<br><br>
+
+    - Global Solidarity Day: Rise Up coordinates an annual Global Solidarity Day, a worldwide event aimed at fostering connections and solidarity across borders. On this day, local chapters organize simultaneous activities, including virtual panels, cultural exchanges, and collaborative projects with international partner organizations. Participants engage in discussions on global issues, share stories of resilience and activism from different parts of the world, and reaffirm their commitment to standing together in pursuit of global justice and human rights.
+</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
